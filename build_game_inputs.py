@@ -84,8 +84,16 @@ def build_park_weather(home_abbrev: str, game_date: str, game_hour_utc: int) -> 
     park = PARKS[home_abbrev]
     if park["roof"] == "fixed":
         return ParkWeather(park_factor=park["park_factor"], weather_run_pct=0.0)
-    weather = df.get_weather(park["lat"], park["lon"], game_date, game_hour_utc)
-    pct = df.weather_run_adjustment(weather, park["roof"])
+    try:
+        weather = df.get_weather(park["lat"], park["lon"], game_date, game_hour_utc)
+        pct = df.weather_run_adjustment(weather, park["roof"])
+    except Exception as e:
+        # A weather-fetch hiccup (timeout, etc.) shouldn't sink the whole
+        # game -- park factor alone is still a real, useful signal, so fall
+        # back to a neutral (0%) weather adjustment rather than skipping
+        # the game entirely.
+        print(f"  weather fetch failed for {home_abbrev} ({e}) -- using park factor only, no weather adjustment")
+        pct = 0.0
     return ParkWeather(park_factor=park["park_factor"], weather_run_pct=pct)
 
 
