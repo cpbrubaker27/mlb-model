@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLB Daily Model &mdash; Friday, August 7, 2026</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background:#0f1115; color:#e7e9ec; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; margin:0; padding:0 0 60px; }
+.header { padding:20px 16px 14px; border-bottom:1px solid #23262e; position:sticky; top:0; background:#0f1115; z-index:10; }
+.header h1 { margin:0; font-size:1.35rem; }
+.header .sub { color:#9aa1ab; font-size:0.82rem; margin-top:4px; }
+.filters { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.filter-btn { background:#1b1e26; border:1px solid #2a2e38; color:#c7cbd3; padding:6px 14px; border-radius:20px; font-size:0.8rem; cursor:pointer; }
+.filter-btn.active { background:#2c2f38; border-color:#4a4f5c; color:#fff; }
+.wrap { max-width:760px; margin:0 auto; padding:16px; }
+table.overview { width:100%; border-collapse:collapse; margin-bottom:24px; font-size:0.85rem; }
+table.overview th { text-align:left; color:#8a91a0; font-weight:600; padding:6px 8px; border-bottom:1px solid #262a35; text-transform:uppercase; font-size:0.68rem; letter-spacing:0.03em; }
+table.overview td { padding:8px; border-bottom:1px solid #1c1f27; }
+table.overview tr { cursor:pointer; }
+table.overview tr:hover td { background:#161922; }
+.tierstar { color:#d4af37; }
+.card { background:#161922; border:1px solid #262a35; border-radius:12px; margin-bottom:18px; overflow:hidden; scroll-margin-top:120px; }
+.card-head { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid #262a35; }
+.matchup { font-weight:700; font-size:1.05rem; }
+.time { color:#9aa1ab; font-size:0.8rem; }
+.section { padding:12px 16px; border-bottom:1px solid #1e2129; }
+.section:last-child { border-bottom:none; }
+.section h3 { margin:0 0 8px; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.04em; color:#8a91a0; }
+.row { display:flex; justify-content:space-between; font-size:0.9rem; padding:3px 0; }
+table.stat { width:100%; border-collapse:collapse; font-size:0.82rem; }
+table.stat th { text-align:left; color:#8a91a0; font-weight:600; padding:4px 6px; font-size:0.68rem; text-transform:uppercase; }
+table.stat td { padding:4px 6px; border-top:1px solid #1e2129; }
+.pill { display:inline-block; padding:3px 10px; border-radius:20px; font-size:0.72rem; font-weight:700; letter-spacing:0.03em; }
+.notes { color:#c6a15b; font-size:0.8rem; margin-top:6px; }
+.contra { color:#e0645c; font-weight:600; }
+.proj { display:flex; gap:18px; margin-bottom:4px; }
+.proj div { flex:1; font-size:0.95rem; }
+.outlook { font-size:0.87rem; color:#c7cbd3; line-height:1.4; }
+.small { color:#9aa1ab; font-size:0.78rem; }
+.envline { font-size:0.85rem; color:#c7cbd3; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>MLB Daily Model</h1>
+    <div class="sub">Friday, August 7, 2026 &middot; generated 13:40 UTC</div>
+    <div class="filters">
+      <button class="filter-btn active" id="f-all" onclick="filterCards('all')">All</button>
+      <button class="filter-btn" id="f-gold" onclick="filterCards('gold')">Gold</button>
+      <button class="filter-btn" id="f-silver" onclick="filterCards('silver')">Silver</button>
+      <button class="filter-btn" id="f-bronze" onclick="filterCards('bronze')">Bronze</button>
+    </div>
+  </div>
+  <div class="wrap">
+    <table class="overview">
+      <thead><tr><th>Game</th><th>Time</th><th>Projected</th><th>Market</th><th>Best Pick</th><th>Tier</th></tr></thead>
+      <tbody>
+        <tr data-best-tier="gold" onclick="document.getElementById('g-LAA-BAL').scrollIntoView({behavior:'smooth'})">
+      <td>LAA @ BAL</td>
+      <td>12:35 PM ET</td>
+      <td>3.8–6.5 <span class="small">(10.3)</span></td>
+      <td>9.5</td>
+      <td>BAL ML</td>
+      <td class="tierstar">★★★</td>
+    </tr>
+      </tbody>
+    </table>
+    
+  <div class="card" id="g-LAA-BAL" data-best-tier="gold">
+    <div class="card-head">
+      <div>
+        <div class="matchup">LAA @ BAL <span class="tierstar">★★★</span></div>
+        <div class="small">SP: R. Johnson (RHP) vs B. Young (RHP)</div>
+      </div>
+      <div class="time">12:35 PM ET</div>
+    </div>
+    <div class="section">
+      <h3>Weather &amp; Park</h3>
+      <div class="envline">Park: hitter-friendly (1.09×) &middot; Effect: helps runs ▲ (+6%)</div>
+    </div>
+    <div class="section">
+      <h3>Starting Pitchers</h3>
+      
+    <table class="stat">
+      <tr><th>Pitcher</th><th>xFIP (L30/SZN)</th><th>Home/Road ERA</th></tr>
+      <tr><td>R. Johnson (RHP)</td><td>5.4 <span class='small'>(5.24 szn)</span></td>
+          <td>9.55</td></tr>
+      <tr><td>B. Young (RHP)</td><td>4.38 <span class='small'>(4.31 szn)</span></td>
+          <td>3.19</td></tr>
+    </table>
+    </div>
+    <div class="section">
+      <h3>Hitting</h3>
+      
+    <table class="stat">
+      <tr><th>Team</th><th>wRC+ (L30/SZN)</th><th>vs Opp Hand (L30/SZN)</th></tr>
+      <tr><td>LAA</td><td>78 <span class='small'>(94 szn)</span></td>
+          <td>70 <span class='small'>(93 szn)</span></td></tr>
+      <tr><td>BAL</td><td>97 <span class='small'>(102 szn)</span></td>
+          <td>82 <span class='small'>(103 szn)</span></td></tr>
+    </table>
+    </div>
+    <div class="section">
+      <h3>Bullpen</h3>
+      
+    <table class="stat">
+      <tr><th>Team</th><th>xFIP (L30/SZN)</th></tr>
+      <tr><td>LAA</td><td>3.38 <span class='small'>(4.25 szn)</span></td></tr>
+      <tr><td>BAL</td><td>4.71 <span class='small'>(4.22 szn)</span></td></tr>
+    </table>
+    </div>
+    <div class="section">
+      <h3>Game Summary &amp; Prediction</h3>
+      <div class="proj">
+        <div>LAA: <strong>3.8</strong> <span class="small">(trend 4.1)</span></div>
+        <div>BAL: <strong>6.5</strong> <span class="small">(trend 5.4)</span></div>
+      </div>
+      <div class="small">Model total 10.3 &middot; Market 9.5 &middot; +175/-190 ML</div>
+      <div class="outlook" style="margin-top:8px;">BAL projects for the higher-scoring day at the plate. Run environment tilts toward the over (10.3 model total, +0.77 edge vs market). Best-supported side: BAL ML.</div>
+      
+    </div>
+    <div class="section">
+      <h3>Moneyline</h3>
+      <div class="row"><span>BAL ML</span><span class="pill" style="background:#d4af37;color:#0f1115;">GOLD</span></div>
+      <div class="small">Model 72.4% vs Market 64.3% (home) &middot; edge +8.1 pts</div>
+      
+    </div>
+    <div class="section">
+      <h3>Total</h3>
+      <div class="row"><span>Over 9.5</span><span class="pill" style="background:#9ea7b3;color:#0f1115;">SILVER</span></div>
+      <div class="small">edge +0.77 runs</div>
+      
+    </div>
+    <div class="section">
+      <h3>Run Line</h3>
+      <div class="row"><span>BAL -1.5</span><span class="pill" style="background:#b5651d;color:#0f1115;">BRONZE</span></div>
+      <div class="small">edge +1.14 runs</div>
+    </div>
+  </div>
+
+    
+    <h3 style="margin:24px 0 8px; font-size:0.9rem; color:#8a91a0; text-transform:uppercase; letter-spacing:0.04em;">Strikeout Watch</h3>
+    <table class="overview">
+      <thead><tr><th>Pitcher</th><th>Team</th><th>Opp</th><th>K/9 (blend)</th><th>Proj Ks</th></tr></thead>
+      <tbody><tr><td>B. Young</td><td>BAL</td><td>LAA</td>
+            <td>7.7</td><td><strong>4.7</strong></td></tr>
+<tr><td>R. Johnson</td><td>LAA</td><td>BAL</td>
+            <td>7.6</td><td><strong>4.6</strong></td></tr></tbody>
+    </table>
+  </div>
+  <script>
+function filterCards(tier) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('f-' + tier).classList.add('active');
+  document.querySelectorAll('.card').forEach(card => {
+    const best = card.getAttribute('data-best-tier');
+    if (tier === 'all' || best === tier) { card.style.display = ''; }
+    else { card.style.display = 'none'; }
+  });
+  document.querySelectorAll('table.overview tbody tr').forEach(row => {
+    const best = row.getAttribute('data-best-tier');
+    if (tier === 'all' || best === tier) { row.style.display = ''; }
+    else { row.style.display = 'none'; }
+  });
+}
+</script>
+</body>
+</html>
